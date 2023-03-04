@@ -30,7 +30,7 @@
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     </div>
                     <div>
-                        <a href="#"">Help Me</a>
+                        <a href="#form"">Help Me</a>
                     </div>
                 </div>
             </div>
@@ -86,7 +86,7 @@
                 </div>
             </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="form">
         <div class="contact__wrapper">
             <div class="contact__wrapper__title">
                 <h2>Contact Us</h2>
@@ -94,26 +94,45 @@
             </div>
             <div class="contact__wrapper__form">
                 <div class="contact__wrapper__form__submit">
-                    <form action="#" method="get" class="was-validated" novalidate>
-                        <div class="form-floating mb-3">
-                          <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <form action="" method="get" class="was-validated" novalidate>
+                        <div class="form-floating">
+                          <input type="text" class="form-control" id="floatingInput" placeholder="Your name" required>
                           <label for="floatingInput">Name</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                          <input type="number" class="form-control" id="floatingPassword" placeholder="Password">
-                          <label for="floatingPassword">Phone</label>
-                        </div>
-                        <div class="form-floating has-validation">
-                          <input type="email" class="form-control" id="floatingPassword" placeholder="Password" required>
-                          <label for="floatingPassword">Email</label>
                             <div class="invalid-feedback">
-                                Put a correct e-mail
+                                Put your name
                             </div>
                         </div>
-                        <div class="d-flex justify-content-center mt-4"><input type="submit" value="Send" class="btn btn-primary w-50"></div>
+                        <div class="form-floating">
+                          <input type="tel" class="form-control" id="floatingNumber" placeholder="Phone number" required pattern="[0-9]{10}">
+                          <label for="floatingNumber">Phone</label>
+                            <div class="invalid-feedback">
+                                Put your phone number
+                            </div>
+                        </div>
+                        <div class="form-floating">
+                          <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com" required pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,4}">
+                          <label for="floatingEmail">Email</label>
+                            <div class="invalid-feedback">
+                                Put your e-mail
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center mt-3"><input type="submit" value="Send" class="btn btn-primary w-50"></div>
                     </form>
                 </div>
-                <div class="contact__wrapper__form__contdata"></div>
+                <div class="contact__wrapper__form__contdata">
+                    <div class="contact__wrapper__form__contdata__item">
+                        <img src="../images/ic_round-mail.png" alt="mail logo">
+                        <span>test@gmail.com</span>
+                    </div>
+                    <div class="contact__wrapper__form__contdata__item">
+                        <img src="../images/ic_round-call.png" alt="mail logo">
+                        <span>(303) 555-0105</span>
+                    </div>
+                    <div class="contact__wrapper__form__contdata__item">
+                        <img src="../images/ic_round-location-on.png" alt="mail logo">
+                        <span>2715 Ash Dr. San Jose, South Dakota 83475</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

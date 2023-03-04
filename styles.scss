@@ -321,26 +321,75 @@ section {
     }
 
     &__form {
+        display: flex;
+        
         &__submit {
             width: 19.74vw;
+            height: 13.95vw;
             margin-left: 5.8vw;
+        }
+
+        &__contdata {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 5.26vw;
+
+            &__item {
+                margin-bottom: 1.58vw;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                & img {
+                    width: 1.26vw;
+                }
+
+                & span {
+                    margin-left: 1.05vw;
+                    color: $white_color;
+                    font-size: 0.73vw;
+                }
+            }
         }
     }
 }
 }
 
-.form-floating input {
-    border-radius: 3.16vw;
+.form-floating {
+    margin-bottom: 0.74vw;
+
+    & .form-control {
+        border-radius: 3.16vw;
+        height: 2.95vw;
+        padding: 0;
+        font-size: 1.2vw;
+        padding-left: 1vw;
+
+    }
+
+    & label {
+        margin-left: 1vw;
+        font-size: 1vw;
+        padding: 0;
+        top: 14%;
+    }
 }
 
 .invalid-feedback {
     color: $white_color;
     margin-left: 1.5vw;
+    font-size: 0.95vw;
 }
 
 .btn.btn-primary.w-50 {
     border: 3px solid $white_color;
-    height: 3.05vw;
+    height: 2.95vw;
     border-radius: 3.16vw;
     background: $secondary_color;
+    padding: 0;
+
+    &:hover {
+        background: #da7878;
+    }
 }
